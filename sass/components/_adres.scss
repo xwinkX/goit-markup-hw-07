@@ -1,0 +1,32 @@
+.adres {
+  font-style: normal;
+}
+.adres .real {
+  margin-bottom: 9px;
+}
+.adres .mail {
+  margin-bottom: 9px;
+}
+.real a {
+  color: var(--button-text-color);
+}
+.adres-one {
+  color: var(--beckground-color);
+  text-decoration: none;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  transition: color var(--timing-function);
+}
+.adres-two {
+  color: var(--adress-color);
+  text-decoration: none;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  transition: color var(--timing-function);
+}
+.adres .adres-one:hover,
+.adres .adres-one:focus,
+.adres .adres-two:hover,
+.adres .adres-two:focus {
+  color: var(--accent-color);
+}

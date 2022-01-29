@@ -1,0 +1,34 @@
+.work-icon {
+  display: flex;
+  justify-content: center;
+  width: 270px;
+}
+
+.work-icon-title:not(:last-child) {
+  margin-right: 10px;
+}
+
+.icon-command:hover,
+.icon-command:focus {
+  background-color: var(--button-header-color);
+}
+.icon-command:hover .icon-command-svg,
+.icon-command:focus .icon-command-svg {
+  fill: var(--beckground-color);
+}
+
+.icon-command-svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--icon-color);
+  transition: fill var(--timing-function);
+}
+.icon-command {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: background-color var(--timing-function);
+}

@@ -1,0 +1,31 @@
+.work {
+  display: flex;
+  justify-content: space-between;
+}
+.work-tytle {
+  width: 270px;
+}
+.work-one {
+  color: var(--primary-text-color);
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.work-two {
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.bacground-advantage {
+  background-color: #f5f4fa;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  display: flex;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
+.icon-advantage {
+  width: 70px;
+  height: 70px;
+}

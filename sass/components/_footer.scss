@@ -1,0 +1,32 @@
+.footer {
+  background-color: var(--hero-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
+}
+.footer-item {
+  display: flex;
+  align-items: baseline;
+}
+.footer-icon {
+  justify-content: flex-start;
+}
+.hover-command {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.hover-command-svg {
+  fill: var(--button-text-color);
+}
+.hover-article {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--button-text-color);
+}
