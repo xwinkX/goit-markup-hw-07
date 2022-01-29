@@ -1,0 +1,22 @@
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-header {
+  display: flex;
+  align-items: center;
+}
+.container-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 696px;
+}
+.container-portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
