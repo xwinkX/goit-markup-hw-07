@@ -1,21 +1,25 @@
-.work-images {
+.classes-list {
   display: flex;
   margin-top: 50px;
+  & .classes-list_item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
-.work-images .images:not(:last-child) {
-  margin-right: 30px;
-}
-.images-item {
+
+.classes-images {
   position: relative;
 }
-.images-title {
+.classes-images_text {
   position: absolute;
-  display: flex;
+
   color: var(--beckground-color);
   background-color: rgba(47, 48, 58, 0.8);
   justify-content: center;
-  align-items: center;
+  @extend %align-list;
   width: 370px;
   height: 70px;
   bottom: 0px;
+}
+.classes {
+  padding-top: 0;
 }

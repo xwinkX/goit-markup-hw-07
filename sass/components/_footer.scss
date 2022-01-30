@@ -3,30 +3,35 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.container-footer {
+.footer-section-list {
   display: flex;
   flex-direction: column;
   margin-right: 70px;
 }
-.footer-item {
+.footer-section {
   display: flex;
   align-items: baseline;
 }
 .footer-icon {
   justify-content: flex-start;
 }
-.hover-command {
+.footer-link {
   background-color: rgba(255, 255, 255, 0.1);
 }
-.hover-command-svg {
+.footer-svg {
   fill: var(--button-text-color);
 }
-.hover-article {
+.footer-text {
   margin-bottom: 20px;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(14px, bold, 1.14, 0.03em);
+  // font-weight: bold;
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--button-text-color);
+}
+.footer-section-list_logo {
+  margin-bottom: 20px;
+  text-decoration: none;
 }

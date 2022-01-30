@@ -1,32 +1,36 @@
 .adres {
   font-style: normal;
 }
-.adres .real {
+.adres_real {
+  margin-bottom: 9px;
+  a {
+    color: var(--button-text-color);
+  }
+}
+.adres_mail {
   margin-bottom: 9px;
 }
-.adres .mail {
-  margin-bottom: 9px;
-}
-.real a {
-  color: var(--button-text-color);
-}
-.adres-one {
+.adres_real--link {
   color: var(--beckground-color);
+  @include font(null, null, 1.8, 0.02em);
   text-decoration: none;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+  // line-height: 1.7;
+  // letter-spacing: 0.03em;
   transition: color var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
-.adres-two {
+.adres-link {
   color: var(--adress-color);
   text-decoration: none;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+  @include font(null, null, 1.7, 0.03em);
+  // line-height: 1.7;
+  // letter-spacing: 0.03em;
   transition: color var(--timing-function);
-}
-.adres .adres-one:hover,
-.adres .adres-one:focus,
-.adres .adres-two:hover,
-.adres .adres-two:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }

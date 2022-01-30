@@ -1,34 +1,32 @@
-.work-icon {
+.icon {
   display: flex;
   justify-content: center;
   width: 270px;
 }
 
-.work-icon-title:not(:last-child) {
+.icon-item:not(:last-child) {
   margin-right: 10px;
 }
 
-.icon-command:hover,
-.icon-command:focus {
-  background-color: var(--button-header-color);
-}
-.icon-command:hover .icon-command-svg,
-.icon-command:focus .icon-command-svg {
-  fill: var(--beckground-color);
-}
-
-.icon-command-svg {
+.icon-item_link--svg {
   width: 20px;
   height: 20px;
   fill: var(--icon-color);
   transition: fill var(--timing-function);
 }
-.icon-command {
-  display: flex;
+.icon-item_link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
   justify-content: center;
-  align-items: center;
+  @extend %align-list;
   transition: background-color var(--timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--button-header-color);
+  }
+  &:hover .icon-item_link--svg,
+  &:focus .icon-item_link--svg {
+    fill: var(--beckground-color);
+  }
 }

@@ -2,20 +2,23 @@
   display: flex;
   justify-content: space-between;
 }
-.work-tytle {
+.work-item {
   width: 270px;
 }
-.work-one {
+.work-title {
+  @include font(null, null, 1.14, null);
   color: var(--primary-text-color);
-  line-height: 1.14;
+
+  // line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.work-two {
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+.work-text {
+  @include font(null, null, 1.7, 0.03em);
+  //   line-height: 1.7;
+  //   letter-spacing: 0.03em;
 }
-.bacground-advantage {
+.work-picturte {
   background-color: #f5f4fa;
   width: 270px;
   height: 120px;
@@ -25,7 +28,7 @@
   justify-content: center;
   align-items: center;
 }
-.icon-advantage {
+.work-picturte_icon {
   width: 70px;
   height: 70px;
 }
