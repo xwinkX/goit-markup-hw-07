@@ -46,6 +46,7 @@
   &:focus > .modal-close_icon {
     fill: var(--accent-color);
   }
+  @extend %align-list;
 }
 
 .modal-text {
@@ -177,5 +178,6 @@
   width: 18px;
   height: 18px;
   transition: fill var(--timing-function);
-  display: block;
+  display: flex;
+  justify-content: center;
 }

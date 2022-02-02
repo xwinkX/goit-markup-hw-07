@@ -1,21 +1,18 @@
-.header {
-  border-bottom: 1px solid var(--border-header-color);
-}
 .nav {
   display: flex;
 }
 .header_container {
   @extend %align-list;
 }
-.site-nav {
+.nav__site-nav {
   display: flex;
   margin-left: 93px;
-  & .site-nav_item:not(:last-child) {
+  & .nav__item:not(:last-child) {
     margin-right: 50px;
   }
 }
 
-.site-nav_link {
+.nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
